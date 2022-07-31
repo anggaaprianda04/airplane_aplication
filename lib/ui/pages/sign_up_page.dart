@@ -145,7 +145,9 @@ class SignUpPage extends StatelessWidget {
               shape: RoundedRectangleBorder(
                   borderRadius:
                       BorderRadiusDirectional.circular(defaultRadius))),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/bonus');
+          },
           child: Text(
             'Get Started',
             style: whiteTextStyle.copyWith(fontSize: 18, fontWeight: medium),
@@ -197,7 +199,6 @@ class SignUpPage extends StatelessWidget {
         children: [
           title(),
           content(),
-          const Spacer(),
           tacButton(),
         ],
       ),
