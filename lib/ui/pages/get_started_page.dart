@@ -52,18 +52,23 @@ class GetStartedPage extends StatelessWidget {
                   style:
                       whiteTextStyle.copyWith(fontSize: 16, fontWeight: light),
                 ),
-                Container(
-                  width: 220,
-                  height: 55,
-                  margin: const EdgeInsets.only(bottom: 80, top: 50),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(17),
-                      color: kPrimaryColor),
-                  child: Center(
-                    child: Text(
-                      'Get Started',
-                      style: whiteTextStyle.copyWith(
-                          fontSize: 18, fontWeight: medium),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/sign-up');
+                  },
+                  child: Container(
+                    width: 220,
+                    height: 55,
+                    margin: const EdgeInsets.only(bottom: 80, top: 50),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(defaultRadius),
+                        color: kPrimaryColor),
+                    child: Center(
+                      child: Text(
+                        'Get Started',
+                        style: whiteTextStyle.copyWith(
+                            fontSize: 18, fontWeight: medium),
+                      ),
                     ),
                   ),
                 )
