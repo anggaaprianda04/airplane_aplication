@@ -11,6 +11,7 @@ Color kGreenColor = const Color(0xff0EC3AE);
 Color kRedColor = const Color(0xffEB70A5);
 Color kWhiteColor = const Color(0xffFFFFFF);
 Color kBackgroundColor = const Color(0xffFAFAFA);
+Color kTransparentColor = Colors.transparent;
 
 TextStyle primaryTextStyle = GoogleFonts.poppins(color: kPrimaryColor);
 TextStyle blackTextStyle = GoogleFonts.poppins(color: kBlackColor);
